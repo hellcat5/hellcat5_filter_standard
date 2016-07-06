@@ -1,4 +1,4 @@
-# hellcat5_loot_standard
+# hellcat5_filter_standard
 Hellcat5's Not So Ugly Standard Loot Filter
 
 Path of Exile Official Forums - 
