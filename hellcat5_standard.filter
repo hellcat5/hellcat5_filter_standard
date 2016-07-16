@@ -1,283 +1,283 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20160626
+#update date: 20160715
 #purpose: custom filter for path of exile
+#include: reference.txt
 #
-#FUNCTIONS:
-#-----------
-#SetBorderColor
-#SetBackgroundColor
-#SetTextColor
-#SetFontSize
-#PlayAlertSound
-#
-#CLASS TYPES:
-#------------
-#Life Flasks
-#Mana Flasks
-#Hybrid Flasks
-#Currency
-#Amulets
-#Rings
-#Claws
-#Daggers
-#Wands
-#One Hand Swords
-#Thrusting One Hand Swords
-#One Hand Axes
-#One Hand Maces
-#Bows
-#Staves
-#Two Hand Swords
-#Two Hand Axes
-#Two Hand Maces
-#Active Skill Gems
-#Support Skill Gems
-#Quivers
-#Belts
-#Gloves
-#Boots
-#Body Armours
-#Helmets
-#Shields
-#Stackable Currency
-#Quest Items
-#Sceptres
-#Utility Flasks
-#Maps
-#Fishing Rods
-#Map Fragments
-#Hideout Doodads
-#Microtransactions
-#Jewel
-#Divination Card 
-
-#we need to see fishing rods yo ho ho
+#************************
+# fishing rod
+#************************
+# fishing rod - parchment color black text
 Show
     Class "Fishing Rods"
-	SetBackgroundColor 170 158 130
-	SetBorderColor 170 158 130
+	SetFontSize 45
 	SetTextColor 0 0 0
-	SetFontSize 100
-	PlayAlertSound 1 100
+	SetBorderColor 170 158 130
+	SetBackgroundColor 170 158 130
+	PlayAlertSound 1 200
 
-# Show us Uniques with the standard Unique color instead of going from item level
+#************************
+# uniques
+#************************
+# uniques - text enlarged
 Show
 	Rarity Unique
-	SetFontSize 64
-	PlayAlertSound 3 100
+	SetFontSize 45
+	PlayAlertSound 3 150
 
-#Show us the jewels the drop
+#************************
+# jewels
+#************************
+#jewels  - purple
 Show
 	Class Jewel
-	SetBackgroundColor 155 0 235
+	SetFontSize 45
+	SetTextColor 0 0 0
 	SetBorderColor 155 0 235
-	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 9 100
+	SetBackgroundColor 155 0 235
+	PlayAlertSound 9 150
 
+#************************
+# gems
+#************************	
+# quality gems - light green background black text
 Show
-	Class Maps "Map Fragments"
-	SetBackgroundColor 200 0 150
-	SetBorderColor 200 0 150
+	Class Gems
+	Quality > 1
+	SetFontSize 45
 	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 7 100
+	SetBorderColor 99 200 55
+	SetBackgroundColor 99 200 55
+	PlayAlertSound 3 150
 
-# Goddess offering
+#Show gem drops - you can add conditions here to cut down on the gems shown
 Show
-	BaseType "Offering to the Goddess"
-	SetBackgroundColor 200 0 150
-	SetBorderColor 200 0 150
-	SetTextColor 0 0 0
-	SetFontSize 100
-	PlayAlertSound 7 100
-
+	Class Gems
 	
-# make items with 6 sockets and 6 links stand out
-Show
-	LinkedSockets 6
-	SetBackgroundColor 200 200 200
-	SetBorderColor 200 200 200
-	SetTextColor 0 0 0
-	SetFontSize 75
-	PlayAlertSound 8 100
-
-#also show items that drop with 5 sockets linked
-Show
-	LinkedSockets 5
-	SetBackgroundColor 120 120 120
-	SetBorderColor 120 120 120
-	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 5 100
-
-#make items with 6 sockets stand out
-Show
-	Sockets 6
-	SetBackgroundColor 80 80 80
-	SetBorderColor 80 80 80
-	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 4 100
-	
-#A blue colouration for regal recipe items
-Show
-    ItemLevel >= 75
-    Rarity Rare
-	SetBackgroundColor 47 91 244
-    SetBorderColor 47 91 244
-	SetTextColor 0 0 0
-	SetFontSize 64
-	
-#A golden colouration for Chaos recipe items
-Show
-    ItemLevel >= 60
-    ItemLevel <= 74
-    Rarity Rare
-    SetBackgroundColor 223 150 13
-	SetBorderColor 223 150 13
-	SetTextColor 0 0 0
-	SetFontSize 64
-		
-#A red colouration for Chance recipe items
-Show
-    ItemLevel < 60
-    Rarity Rare
-	SetBackgroundColor 250 50 90
-    SetBorderColor 250 50 90
-	SetTextColor 0 0 0
-	SetFontSize 64
-
-#we want to see divine cards with a prominent color 
+#************************
+# divination cards
+#************************
+#divination card - brownish orange background black text
 Show
 	Class "Divination Card"
-	SetBackgroundColor 200 100 0
-	SetBorderColor 200 100 0
+	SetFontSize 45
 	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 9 100
+	SetBorderColor 200 100 0
+	SetBackgroundColor 200 100 0
+	PlayAlertSound 9 150
 
-#show us all non hp / mana flasks
+#************************
+# msp device items
+#************************
+# map drops - magenta background black text
+Show
+	Class Maps "Map Fragments"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 0 150
+	SetBackgroundColor 200 0 150
+	PlayAlertSound 7 150
+	
+# goddess offering  - magenta background black test
+Show
+	BaseType Offering
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 0 150
+	SetBackgroundColor 200 0 150
+	PlayAlertSound 7 150
+
+#************************
+# 6 sockets - 6L 5L 6S
+#************************
+# 6 linked sockets - light grey background black text
+Show
+	LinkedSockets 6
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 200 200
+	SetBackgroundColor 200 200 200
+	PlayAlertSound 8 150
+
+# 5 linked sockets - grey background black text
+Show
+	LinkedSockets 5
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+	PlayAlertSound 5 150
+
+# 6 sockets - dark grey background orange text
+Show
+	Sockets 6
+	SetFontSize 45
+	SetTextColor 223 175 104
+	SetBorderColor 80 80 80
+	SetBackgroundColor 80 80 80
+	PlayAlertSound 4 150
+
+#************************
+# vendor recipes
+#************************
+# regal recipe - blue background black text
+Show
+    Rarity Rare
+    ItemLevel >= 75
+	SetFontSize 45
+	SetTextColor 0 0 0
+    SetBorderColor 47 91 244
+	SetBackgroundColor 47 91 244
+	
+# chaos recipe - golden background black text
+Show
+    Rarity Rare
+    ItemLevel >= 60
+    ItemLevel <= 74
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 223 150 13
+    SetBackgroundColor 223 150 13
+		
+# chance recipe - raddish background black text
+Show
+    Rarity Rare
+    ItemLevel < 60
+	SetFontSize 45
+	SetTextColor 0 0 0
+    SetBorderColor 250 50 90
+	SetBackgroundColor 250 50 90
+
+# chisel vendor recipe (one of the maces below quality 20 + map = chisel) - pee yellow background black text
+Show
+	Class "One Hand Mace"
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity < Magic
+	SetTextColor 75 50 0
+	SetBorderColor 125 125 0
+	SetBackgroundColor 125 125 0
+
+#************************
+# flasks
+#************************
+# utility flasks - grey background black text
 Show
 	Class "Utility Flasks"
-	SetBackgroundColor 120 120 120
-	SetBorderColor 120 120 120
+	SetFontSize 45
 	SetTextColor 0 0 0
-	SetFontSize 64
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
 
-#show us the end tier hp/mp pots
+# life / mana potions - endgame - grey background black text
 Show
 	BaseType "Eternal Life Flask" "Eternal Mana Flask"
-	SetBackgroundColor 120 120 120
+	SetFontSize 45
+	SetTextColor 0 0 0
 	SetBorderColor 120 120 120
-	SetTextColor 0 0 0
-	SetFontSize 64
+	SetBackgroundColor 120 120 120
 		
-#show scrolls with an old parchment colouration
-Show
-	BaseType Scroll
-	SetBackgroundColor 223 175 104
-	SetBorderColor 223 175 104
-	SetTextColor 0 0 0
-	SetFontSize 64
-
-#show currency and maps in default colors
-
-Show
-	BaseType "Glassblower's Bauble" "Orb of Chance" "Jeweller's Orb" "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret"
-	SetBackgroundColor 170 158 130
-	SetBorderColor 170 158 130
-	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 3 100
-	
-Show
-	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather"
-	SetBackgroundColor 170 158 130
-	SetBorderColor 170 158 130
-	SetTextColor 0 0 0
-	SetFontSize 75
-	PlayAlertSound 2 100
-	
+#************************
+# currency
+#************************
+# tier 1 currency (mirror) - fishing rod and mirror black text
 Show
     BaseType "Mirror of Kalandra"
 	SetBackgroundColor 170 158 130
 	SetBorderColor 170 158 130
 	SetTextColor 0 0 0
-	SetFontSize 100
-	PlayAlertSound 1 100
-	
-#sound set to the same as RGB link for chromatic orbs
+	SetFontSize 45
+	PlayAlertSound 1 200
+
+# tier 2 currency - default currency text set as background black text
 Show
-	BaseType "Chromatic Orb"
+	BaseType "Eternal Orb" "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather"
 	SetBackgroundColor 170 158 130
 	SetBorderColor 170 158 130
 	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 6 50
+	SetFontSize 45
+	PlayAlertSound 2 200
 
-#Show remaining currency
+# tier 3 currency - default currency text set as background black text
+Show
+	BaseType "Gemcutter's Prism" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Regal Orb" "Orb of Scouring" "Orb of Fusing" "Blessed Orb" "Orb of Alchemy" "Glassblower's Bauble" "Orb of Chance" "Jeweller's Orb" "Cartographer's Chisel" 
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 170 158 130
+	SetBackgroundColor 170 158 130
+	PlayAlertSound 3 150
+
+# chromatic orb - default currency text set as background black text
+# sound set to the same as RGB link group for vendor chromatic orbs
+Show
+	BaseType "Chromatic Orb"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 170 158 130
+	SetBackgroundColor 170 158 130
+	PlayAlertSound 6 50
+	
+# wisdom and portal scrolls - parchment background black text
+Show
+	BaseType Scroll
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 223 175 104
+	SetBackgroundColor 223 175 104
+	
+# Tier 4 and league specific currency - enlarged font size
 Show
 	Class Currency
-	SetFontSize 64
-	
-#make the RGB links stand out to quickly find items sellable for chrome
-Show
-	SocketGroup RGB
-	SetBackgroundColor 0 150 0
-	SetBorderColor 200 0 0
-	SetTextColor 0 0 175
-	SetFontSize 64
-	PlayAlertSound 6 50
+	SetFontSize 45
 
-#Show all other rare items
-Show
-    Rarity >= Rare
-
-#Show and sound gem drops with guality 
-Show
-	Class Gems
-	Quality > 1
-	SetBackgroundColor 99 200 55
-	SetBorderColor 99 200 55
-	SetTextColor 0 0 0
-	SetFontSize 64
-	PlayAlertSound 3 100	
-
-#Show gem drops - you can add conditions here to cut down on the gems shown
-Show
-	Class Gems	
-
+#************************
+# special cases
+#************************
+# talisman
 Show
 	BaseType Talisman
-	
-#Show the commonly sought base types for Zana league chancing / general chancingin turquoise
+	SetFontSize 45
+
+# labyrinth - black background orange text
+Show
+	Class Labyrinth
+	SetFontSize 45
+	SetTextColor 200 120 0
+
+#************************
+# chancing, crafting, alching, build gear
+#************************
+# chancing basetypes - turquoise background black text
 Show
 	BaseType "Turquoise Amulet" "Agate Amulet" "Leather Belt" "Occultist's Vestment" "Prophecy Wand" "Sorcerer Boots"
 	Rarity < Magic
-	SetBackgroundColor 0 255 255
-	SetBorderColor 0 255 255
 	SetTextColor  0 50 75
+	SetBorderColor 0 255 255
+	SetBackgroundColor 0 255 255
 
-#Chisel Vendor Recipe (one of the maces below quality 20 + map = chisel)
+# crafting / alching basetypes + build gear - bright yellow background black text
 Show
-	Class "One Hand Mace"
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	BaseType "Titanium Spirit Shield"
 	Rarity < Magic
-# pee yellow
-	SetBackgroundColor 125 125 0
-	SetBorderColor 125 125 0
-	SetTextColor 75 50 0
-	
-#Show crafting base items
-Show
-	BaseType "Rustic Sash" "Titanium Spirit Shield" "Graceful Sword" "Lithe Blade"
-	Rarity < Magic
-	SetBackgroundColor 255 255 0
-	SetBorderColor 255 255 0 
 	SetTextColor 0 0 0
+	SetBorderColor 255 255 0
+	SetBackgroundColor 255 255 0
+
+#************************
+# chromatic vendor recipe
+#************************	
+# rgb vendor recipe
+Show
+	SocketGroup RGB
+	Rarity < Rare
+	SetFontSize 45
+	SetTextColor 0 0 175
+	SetBorderColor 200 0 0
+	SetBackgroundColor 0 150 0
+	PlayAlertSound 6 50
 	
+#************************
+# no more face
+#************************
 #lets hide everything else that does not qualify for one of the above rules
 Hide
     Rarity < Rare
