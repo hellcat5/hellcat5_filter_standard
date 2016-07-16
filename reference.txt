@@ -1,0 +1,90 @@
+# Hellcat5's best practices reference
+# Created: 20160715
+#
+#CONDITIONS (precedence order):
+#-----------
+BaseType <Type>						- BaseType must be capitalized (Sabre not sabre)
+Class	<Class>						- Class must be capitalized (Sword not sword)
+LinkedSockets [Operator] <Links>	- (0, 2-6)
+Sockets [Operator] <Sockets>		- (0-6)
+SocketGroup [Group]					- RGB or RGBBWW etc.
+Height [Operator] <Value>			- (1-4)
+Width [Operator] <Value>			- (1-2)
+Rarity [Operator] <Rarity> 			- (Normal, Magic, Rare, Unique)
+Quality [Operator] <Quality>		- (0-20)
+DropLevel [Operator] <Level>		- (0-100)
+ItemLevel [Operator] <Level>		- (0-100)
+#
+#FUNCTIONS (precedence order):
+#----------
+#SetFontSize <FontSize>
+#SetTextColor <Red> <Green> <Blue> [Alpha]
+#SetBorderColor <Red> <Green> <Blue> [Alpha]
+#SetBackgroundColor <Red> <Green> <Blue> [Alpha]
+#PlayAlertSound <Id> [Volume]#PROPERTIES:
+#
+#CLASS TYPES:
+#------------
+#Life Flasks
+#Mana Flasks
+#Hybrid Flasks
+#Currency
+#Amulets
+#Rings
+#Claws
+#Daggers
+#Wands
+#One Hand Swords
+#Thrusting One Hand Swords
+#One Hand Axes
+#One Hand Maces
+#Bows
+#Staves
+#Two Hand Swords
+#Two Hand Axes
+#Two Hand Maces
+#Active Skill Gems
+#Support Skill Gems
+#Quivers
+#Belts
+#Gloves
+#Boots
+#Body Armours
+#Helmets
+#Shields
+#Stackable Currency
+#Quest Items
+#Sceptres
+#Utility Flasks
+#Maps
+#Fishing Rods
+#Map Fragments
+#Hideout Doodads
+#Microtransactions
+#Jewel
+#Divination Card
+#Labyrinth Item
+#Labyrinth Trinket
+#
+#BASETYPES:
+#----------
+#2h weapon tier 1 base types - 15
+#	BaseType "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Imperial Staff" "Judgement Staff" "Eclipse Staff" "Despot Axe" "Void Axe" "Fleshripper" "Imperial Maul" "Terror Maul" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade"
+
+#1h weapon tier 1 base types - 24
+#	BaseType "Imperial Claw" "Terror Claw" "Gemini Claw" "Imperial Skean" "Demon Dagger" "Sai" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Auric Mace" "Nightmare Mace" "Behemoth Mace" "Eternal Sword" "Midnight Blade" "Tiger Hook" "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre" "Jewelled Foil" "Harpy Rapier" "Dragoon Sword" "Tornado Wand" "Prophecy Wand" "Profane Wand"
+
+#body armour tier 1 base types - 19
+#	BaseType "Astral Plate" "Gladiator Plate" "Glorious Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb"
+
+#boots tier 1 base types - 7
+#	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots"
+
+#gloves tier 1 base types - 6
+#	BaseType "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+
+#helmet tier 1 base types - 9
+#	BaseType "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Praetor Crown" "Deicide Mask" "Pig-Faced Bascinet" "Prophet Crown" "Vaal Mask"
+
+#shield tier 1 base types - 15
+#	BaseType "Colossal Tower Shield" "Pinnacle Tower Shield" "Crusader Buckler" "Imperial Buckler" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Teak Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Vaal Buckler" "Vaal Spirit Shield" "Spiny Round Shield" "Branded Kite Shield" "Alder Spiked Shield"
