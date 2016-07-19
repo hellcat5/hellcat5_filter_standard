@@ -67,24 +67,46 @@ Show
 	PlayAlertSound 9 150
 
 #************************
-# msp device items
+# map device items
 #************************
-# map drops - magenta background black text
+# map drops - magenta background black text - top tier
 Show
-	Class Maps "Map Fragments"
+	Class Maps
+	DropLevel >= 79
 	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 0 150
+	SetBackgroundColor 200 0 150
+	PlayAlertSound 7 200
+
+# map drops - magenta background black text - middle tier
+Show
+	Class Maps
+	DropLevel >= 74
+	DropLevel <= 78
+	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 200 0 150
 	SetBackgroundColor 200 0 150
 	PlayAlertSound 7 150
-	
-# goddess offering  - magenta background black test
+
+# map drops - magenta background black text - low tier
 Show
-	BaseType Offering
+	Class Maps
+	DropLevel >= 62
+	DropLevel <= 73
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 170 0 120
+	SetBackgroundColor 170 0 120
+
+# map fragments and other map types - magenta black text
+Show
+	Class Map
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBorderColor 200 0 150
-	SetBackgroundColor 200 0 150
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
 	PlayAlertSound 7 150
 
 #************************
@@ -112,7 +134,7 @@ Show
 Show
 	Sockets 6
 	SetFontSize 45
-	SetTextColor 223 175 104
+	SetTextColor 238 210 145
 	SetBorderColor 80 80 80
 	SetBackgroundColor 80 80 80
 	PlayAlertSound 4 150
@@ -120,24 +142,43 @@ Show
 #************************
 # vendor recipes
 #************************
-# regal recipe - blue background black text
+# regal recipe - blue background black text - endgame basetypes
 Show
+	DropLevel >= 62
     Rarity Rare
-    ItemLevel >= 75
-	SetFontSize 45
+	ItemLevel >= 75
+    SetFontSize 45
 	SetTextColor 0 0 0
     SetBorderColor 47 91 244
 	SetBackgroundColor 47 91 244
-	
-# chaos recipe - golden background black text
+
+# regal recipe - low tier - blue background golden text
 Show
-    Rarity Rare
-    ItemLevel >= 60
-    ItemLevel <= 74
+	Rarity Rare
+	ItemLevel >= 75
+	SetTextColor 235 207 159
+    SetBorderColor 62 128 188
+	SetBackgroundColor 62 128 188
+
+# chaos recipe - golden background black text - endgame basetypes
+Show
+	DropLevel >= 62
+	Rarity Rare
+	ItemLevel >= 60
+	ItemLevel <= 74
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 223 150 13
-    SetBackgroundColor 223 150 13
+	SetBackgroundColor 223 150 13
+
+# chaos recipe - mid to low tier basetypes
+Show
+    Rarity Rare
+	ItemLevel >= 60
+    ItemLevel <= 74
+	SetTextColor 0 0 0
+	SetBorderColor 200 127 0
+    SetBackgroundColor 200 127 0
 		
 # chance recipe - raddish background black text
 Show
@@ -170,8 +211,18 @@ Show
 
 # life / mana potions - endgame - grey background black text
 Show
-	BaseType "Eternal Life Flask" "Eternal Mana Flask"
+	Class Life Mana Hybrid
+	DropLevel >= 60
 	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 180 180 180
+	SetBackgroundColor 180 180 180
+
+# life / mana potions - beginning - grey background black text
+Show
+	Class Life Mana Hybrid
+	DropLevel <= 59
+	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 120 120 120
 	SetBackgroundColor 120 120 120
@@ -182,19 +233,19 @@ Show
 # tier 1 currency (mirror) - fishing rod and mirror black text
 Show
     BaseType "Mirror of Kalandra"
-	SetBackgroundColor 170 158 130
-	SetBorderColor 170 158 130
-	SetTextColor 0 0 0
 	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 218 190
+	SetBackgroundColor 230 218 190
 	PlayAlertSound 1 200
 
 # tier 2 currency - default currency text set as background black text
 Show
 	BaseType "Eternal Orb" "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather"
-	SetBackgroundColor 170 158 130
-	SetBorderColor 170 158 130
-	SetTextColor 0 0 0
 	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 188 160
+	SetBackgroundColor 200 188 160
 	PlayAlertSound 2 200
 
 # tier 3 currency - default currency text set as background black text
@@ -214,7 +265,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 170 158 130
 	SetBackgroundColor 170 158 130
-	PlayAlertSound 6 50
+	PlayAlertSound 6 150
 	
 # wisdom and portal scrolls - parchment background black text
 Show
@@ -257,7 +308,7 @@ Show
 # crafting / alching basetypes + build gear - bright yellow background black text
 Show
 	BaseType "Titanium Spirit Shield"
-	Rarity < Magic
+	Rarity < Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 255 0
 	SetBackgroundColor 255 255 0
@@ -273,7 +324,7 @@ Show
 	SetTextColor 0 0 175
 	SetBorderColor 200 0 0
 	SetBackgroundColor 0 150 0
-	PlayAlertSound 6 50
+	PlayAlertSound 6 150
 	
 #************************
 # no more face
