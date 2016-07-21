@@ -130,7 +130,7 @@ Show
 	SetBackgroundColor 120 120 120
 	PlayAlertSound 5 150
 
-# 6 sockets - dark grey background orange text
+# 6 sockets - dark grey background tan text
 Show
 	Sockets 6
 	SetFontSize 45
@@ -297,7 +297,7 @@ Show
 #************************
 # chancing, crafting, alching, build gear
 #************************
-# chancing basetypes - turquoise background black text
+# chancing basetypes - turquoise / cyan background black text
 Show
 	BaseType "Turquoise Amulet" "Agate Amulet" "Leather Belt" "Occultist's Vestment" "Prophecy Wand" "Sorcerer Boots"
 	Rarity < Magic
