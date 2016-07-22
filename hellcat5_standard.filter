@@ -19,11 +19,41 @@ Show
 #************************
 # uniques
 #************************
-# uniques - text enlarged
+# uniques t1 - 2 or more exalted - text enlarged (45) sound 2
 Show
+	BaseType "Occultist's Vestment" "Glorious Plate" "Assassin's Garb" "Exquisite Leather" "Vaal Regalia" "Sorcerer Boots" "Crusader Boots" "Vaal Gauntlets" "Deicide Mask" "Champion Kite Shield" "Vaal Axe" "Gavel" "Prophecy Wand"
 	Rarity Unique
 	SetFontSize 45
+	SetTextColor 205 126 67 
+	PlayAlertSound 2 150
+
+# uniques t2 - 1 exalted up - text enlarged (40) sound 3
+Show
+	BaseType "Onyx Amulet" "Gold Ring" "Unset Ring" "Paua Ring" "Sacrificial Garb" "Vaal Mask" "Corrugated Buckler" "Imperial Bow" "Great Mallet" "Judgement Staff" "Vaal Blade" "Silver Flask" "Sapphire Flask" "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Hubris Circlet"
+	Rarity Unique
+	SetFontSize 45
+	PlayAlertSound 2 150
+
+# uniques t3 - 10 chaos and up - text enlarged (40) sound 3
+Show
+	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
+	Rarity Unique
+	SetFontSize 40
 	PlayAlertSound 3 150
+
+# uniques t4 - fated uniques - text enlarged (40) sound 3
+Show
+	BaseType "Coral Amulet" "Jade Amulet" "Iron Ring" "Two-Stone Ring" "Coral Ring" "Serrated Arrow Quiver" "Plate Vest" "Scholar Boots" "Goathide Gloves" "Iron Hat" "Vine Circlet" "Gilded Sallet" "Painted Buckler" "Plank Kite Shield" "Jade Hatchet" "Woodsplitter" "Death Bow" "Royal Bow" "Crude Bow" "Long Bow" "Sledgehammer" "Iron Staff" "Ornate Sword" "Fire Arrow Quiver" 
+	Rarity Unique
+	SetFontSize 40
+	SetTextColor 181 71 254
+	PlayAlertSound 3 150
+
+# uniques t5 - text enlarged (40) darker font color
+Show
+	Rarity Unique
+	SetFontSize 40
+	SetTextColor 145 66 7
 
 #************************
 # jewels
