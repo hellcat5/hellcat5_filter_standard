@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20160715
+#update date: 20160721
 #purpose: custom filter for path of exile
 #include: reference.txt
 #
@@ -40,7 +40,7 @@ Show
 #************************
 # gems
 #************************	
-# quality gems - light green background black text
+# quality gems - light green background black text match sound to Gemcutter's Prism
 Show
 	Class Gems
 	Quality > 1
@@ -48,7 +48,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 99 200 55
 	SetBackgroundColor 99 200 55
-	PlayAlertSound 3 150
+	PlayAlertSound 6 150
 
 #Show gem drops - you can add conditions here to cut down on the gems shown
 Show
@@ -241,31 +241,30 @@ Show
 
 # tier 2 currency - default currency text set as background black text
 Show
-	BaseType "Eternal Orb" "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather"
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather" "Stacked Deck"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 200 188 160
 	SetBackgroundColor 200 188 160
 	PlayAlertSound 2 200
 
-# tier 3 currency - default currency text set as background black text
+# tier 3 currency - drop or recipe only - default currency text set as background black text
 Show
-	BaseType "Gemcutter's Prism" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Regal Orb" "Orb of Scouring" "Orb of Fusing" "Blessed Orb" "Orb of Alchemy" "Glassblower's Bauble" "Orb of Chance" "Jeweller's Orb" "Cartographer's Chisel" 
-	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBorderColor 170 158 130
-	SetBackgroundColor 170 158 130
-	PlayAlertSound 3 150
-
-# chromatic orb - default currency text set as background black text
-# sound set to the same as RGB link group for vendor chromatic orbs
-Show
-	BaseType "Chromatic Orb"
-	SetFontSize 45
+	BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Blessed Orb" "Regal Orb" "Cartographer's Chisel"
+	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 170 158 130
 	SetBackgroundColor 170 158 130
 	PlayAlertSound 6 150
+
+# tier 4 currency - default currency text set as background black text
+Show
+	BaseType "Orb of Fusing" "Chromatic Orb" "Orb of Regret" "Orb of Scouring" "Orb of Chance" "Orb of Alchemy"
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 140 128 100
+	SetBackgroundColor 140 128 100
+	PlayAlertSound 3 150
 	
 # wisdom and portal scrolls - parchment background black text
 Show
@@ -275,7 +274,7 @@ Show
 	SetBorderColor 223 175 104
 	SetBackgroundColor 223 175 104
 	
-# Tier 4 and league specific currency - enlarged font size
+# Tier 5 and league specific currency - enlarged font size
 Show
 	Class Currency
 	SetFontSize 45
@@ -324,7 +323,6 @@ Show
 	SetTextColor 0 0 175
 	SetBorderColor 200 0 0
 	SetBackgroundColor 0 150 0
-	PlayAlertSound 6 150
 	
 #************************
 # no more face
