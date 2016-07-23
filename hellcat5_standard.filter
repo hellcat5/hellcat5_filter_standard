@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20160721
+#update date: 20160723
 #purpose: custom filter for path of exile
 #include: reference.txt
 #
@@ -83,18 +83,47 @@ Show
 #Show gem drops - you can add conditions here to cut down on the gems shown
 Show
 	Class Gems
-	
+
 #************************
 # divination cards
 #************************
-#divination card - brownish orange background black text
+#divination card t1 - 1ex + brownish orange background black text
 Show
 	Class "Divination Card"
+	BaseType "Abandoned Wealth" "The Artist" "Audacity" "The Brittle Emperor" "The Devastator" "Dialla's Subjugation" "The Doctor" "The Dragon's Heart" "The Fiend" "Heterochromia" "Hope" "House of Mirrors" "The Immortal" "Hunter's Reward" "Last Hope" "The Last One Standing" "The Queen" "The Thaumaturgist" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 200 100 0
 	SetBackgroundColor 200 100 0
-	PlayAlertSound 9 150
+	PlayAlertSound 2 150
+
+#divination card t2 - 20c to 1ex brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "The Aesthete" "The Betrayal" "Blind Venture" "The Body" "Bowyer's Dream" "The Calling" "The Celestial Justicar" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Enlightened" "The Ethereal" "The Formless Sea" "Gemcutter's Promise" "The Harvester" "The Hunger" "The King's Heart" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "The Offering" "The Risk" "The Spoiled Prince" "Volatile Power" "The Warlord" "The Watcher"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 2 150
+
+#divination card t3 - 10c to 20c brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "Anarchy's Price" "Assassin's Favour" "The Avenger" "Birth of the Three" "The Cataclysm" "The Chains that Bind" "Emperor of Purity" "The Flora's Gift" "The Gentleman" "The Gladiator" "Glimmer of Hope" "Hubris" "The Poet" "Pride Before the Fall" "The Sephirot" "The Soul" "The Stormcaller" "Tranquillity" "Treasure Hunter" "The Web" "The Wind"
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 150
+
+#divination card t4 - brownish orange background black text
+Show
+	Class "Divination Card"
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 140 40 0
+	SetBackgroundColor 140 40 0
 
 #************************
 # map device items
@@ -322,6 +351,7 @@ Show
 	Class Labyrinth
 	SetFontSize 45
 	SetTextColor 200 120 0
+	PlayAlertSound 9 150
 
 #************************
 # chancing, crafting, alching, build gear
