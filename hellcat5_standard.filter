@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20160723
+#update date: 20160726
 #purpose: custom filter for path of exile
 #include: reference.txt
 #
@@ -27,21 +27,34 @@ Show
 	SetTextColor 205 126 67 
 	PlayAlertSound 2 150
 
-# uniques t2 - 1 exalted up - text enlarged (40) sound 3
+# uniques t2 - 1ex to 2ex - text enlarged (40) sound 3
 Show
 	BaseType "Onyx Amulet" "Gold Ring" "Unset Ring" "Paua Ring" "Sacrificial Garb" "Vaal Mask" "Corrugated Buckler" "Imperial Bow" "Great Mallet" "Judgement Staff" "Vaal Blade" "Silver Flask" "Sapphire Flask" "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Hubris Circlet"
 	Rarity Unique
 	SetFontSize 45
 	PlayAlertSound 2 150
 
-# uniques t3 - 10 chaos and up - text enlarged (40) sound 3
+# uniques t3 - 20 chaos to 1ex - text enlarged (40) sound 3
 Show
 	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
 	Rarity Unique
 	SetFontSize 40
 	PlayAlertSound 3 150
 
-# uniques t4 - fated uniques - text enlarged (40) sound 3
+# uniques t4 - 10 chaos to 20 chaos - text enlarged (40) sound 3
+Show
+	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
+	Rarity Unique
+	SetFontSize 40
+	PlayAlertSound 3 150
+
+# uniques t5 - 10 chaos to 20 chaos - text enlarged (40) sound 3
+Show
+	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
+	Rarity Unique
+	PlayAlertSound 3 150
+
+# uniques - fated - text enlarged (40) sound 3
 Show
 	BaseType "Coral Amulet" "Jade Amulet" "Iron Ring" "Two-Stone Ring" "Coral Ring" "Serrated Arrow Quiver" "Plate Vest" "Scholar Boots" "Goathide Gloves" "Iron Hat" "Vine Circlet" "Gilded Sallet" "Painted Buckler" "Plank Kite Shield" "Jade Hatchet" "Woodsplitter" "Death Bow" "Royal Bow" "Crude Bow" "Long Bow" "Sledgehammer" "Iron Staff" "Ornate Sword" "Fire Arrow Quiver" 
 	Rarity Unique
@@ -49,10 +62,9 @@ Show
 	SetTextColor 181 71 254
 	PlayAlertSound 3 150
 
-# uniques t5 - text enlarged (40) darker font color
+# uniques t6 - text enlarged (40) darker font color
 Show
 	Rarity Unique
-	SetFontSize 40
 	SetTextColor 145 66 7
 
 #************************
@@ -87,40 +99,66 @@ Show
 #************************
 # divination cards
 #************************
-#divination card t1 - 1ex + brownish orange background black text
+#divination card t1 - 2ex + brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Abandoned Wealth" "The Artist" "Audacity" "The Brittle Emperor" "The Devastator" "Dialla's Subjugation" "The Doctor" "The Dragon's Heart" "The Fiend" "Heterochromia" "Hope" "House of Mirrors" "The Immortal" "Hunter's Reward" "Last Hope" "The Last One Standing" "The Queen" "The Thaumaturgist" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
+	BaseType "The Brittle Emperor" "The Doctor" "The Fiend" "The Formless Sea" "House of Mirrors" "Hunter's Reward"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 200 100 0
 	SetBackgroundColor 200 100 0
 	PlayAlertSound 2 150
 
-#divination card t2 - 20c to 1ex brownish orange background black text
+#divination card t2 - 1ex to 2ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "The Aesthete" "The Betrayal" "Blind Venture" "The Body" "Bowyer's Dream" "The Calling" "The Celestial Justicar" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Enlightened" "The Ethereal" "The Formless Sea" "Gemcutter's Promise" "The Harvester" "The Hunger" "The King's Heart" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "The Offering" "The Risk" "The Spoiled Prince" "Volatile Power" "The Warlord" "The Watcher"
+	BaseType "The Immortal" "The Queen" "The Thaumaturgist"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
 	PlayAlertSound 2 150
 
-#divination card t3 - 10c to 20c brownish orange background black text
+#divination card t3 - 20c to 1ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Anarchy's Price" "Assassin's Favour" "The Avenger" "Birth of the Three" "The Cataclysm" "The Chains that Bind" "Emperor of Purity" "The Flora's Gift" "The Gentleman" "The Gladiator" "Glimmer of Hope" "Hubris" "The Poet" "Pride Before the Fall" "The Sephirot" "The Soul" "The Stormcaller" "Tranquillity" "Treasure Hunter" "The Web" "The Wind"
+	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
 	PlayAlertSound 3 150
 
-#divination card t4 - brownish orange background black text
+#divination card t4 - 10c to 20c brownish orange background black text
 Show
 	Class "Divination Card"
+	BaseType "Bowyer's Dream" "The Dapper Prodigy" "The Enlightened" "Hope" "Lucky Deck" "The Sephirot" "The Tyrant" "The Warlord" "The Wolf"
 	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 150
+
+#divination card t5 - 2c to 10c - brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind"
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 150
+
+#divination card t6 - 1c - brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "Audacity" "The Betrayal" "Birth of the Three" "Blind Venture" "Boundless Realms" "The Cataclysm" "The Catalyst" "The Conduit" "Coveted Possession" "Death" "The Demoness" "The Doppelganger" "The Drunken Aristocrat" "Emperor's Luck" "The Encroaching Darkness" "The Explorer" "The Feast" "The Fox" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Hubris" "The Incantation" "Light and Truth" "The Lord in Black" "The Pack Leader" "The Poet" "Prosperity" "Shard of Fate" "The Siren" "The Throne" "The Traitor" "Tranquillity" "Treasure Hunter" "The Web" "The Wrath"
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+
+#divination card t7 - under 1c - brownish orange background black text
+Show
+	Class "Divination Card"
 	SetTextColor 0 0 0
 	SetBorderColor 140 40 0
 	SetBackgroundColor 140 40 0
@@ -197,6 +235,39 @@ Show
 	SetBorderColor 80 80 80
 	SetBackgroundColor 80 80 80
 	PlayAlertSound 4 150
+
+#************************
+# vaal corrupt white sockets
+#************************
+# white socket corrupted - three white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup WWW
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 143 33 0
+	SetBackgroundColor 143 33 0
+	PlayAlertSound 2 150
+
+# white socket corrupted - at least two white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup WW
+	SetFontSize 40
+	SetTextColor 255 255 255
+	SetBorderColor 143 33 0
+	SetBackgroundColor 143 33 0
+
+# white socket corrupted - at least one white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup W
+	SetTextColor 255 255 255
+	SetBorderColor 113 3 0
+	SetBackgroundColor 113 3 0
 
 #************************
 # vendor recipes
