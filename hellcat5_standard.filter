@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20160726
+#update date: 20160902
 #purpose: custom filter for path of exile
 #include: reference.txt
 #
@@ -112,7 +112,7 @@ Show
 #divination card t2 - 1ex to 2ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "The Immortal" "The Queen" "The Thaumaturgist"
+	BaseType "The Immortal" "The Queen" "The Thaumaturgist" "Mawr Blaidd"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
@@ -122,7 +122,7 @@ Show
 #divination card t3 - 20c to 1ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
+	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power" "The Void"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
@@ -142,7 +142,7 @@ Show
 #divination card t5 - 2c to 10c - brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind"
+	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind" "The Oath"
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
@@ -190,7 +190,7 @@ Show
 # map drops - magenta background black text - low tier
 Show
 	Class Maps
-	DropLevel >= 62
+	DropLevel >= 58
 	DropLevel <= 73
 	SetFontSize 40
 	SetTextColor 0 0 0
@@ -282,6 +282,16 @@ Show
     SetBorderColor 47 91 244
 	SetBackgroundColor 47 91 244
 
+# regal recipe - rings amulets, belts, and quivers 
+Show
+	Class Ring Amulet Belt Quiver
+    Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 45
+	SetTextColor 0 0 0
+    SetBorderColor 47 91 244
+	SetBackgroundColor 47 91 244
+
 # regal recipe - low tier - blue background golden text
 Show
 	Rarity Rare
@@ -300,6 +310,17 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 223 150 13
 	SetBackgroundColor 223 150 13
+
+# chaos recipe - rings amulets belts quivers
+Show
+	Class Ring Amulet Belt Quiver
+    Rarity Rare
+	ItemLevel >= 60
+    ItemLevel <= 74	
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 223 150 13
+    SetBackgroundColor 223 150 13
 
 # chaos recipe - mid to low tier basetypes
 Show
@@ -407,6 +428,55 @@ Show
 # Tier 5 and league specific currency - enlarged font size
 Show
 	Class Currency
+	SetFontSize 45
+
+#************************
+# essence league
+#************************
+# essence tier 1
+Show
+	BaseType "Whispering Essence"
+	SetFontSize 45
+
+# essence tier 2
+Show
+	BaseType "Muttering Essence"
+	SetFontSize 45
+
+# essence tier 3
+Show
+	BaseType "Weeping Essence"
+	SetFontSize 45
+
+# essence tier 4
+Show
+	BaseType "Wailing Essence"
+	SetFontSize 45
+
+# essence tier 5
+Show
+	BaseType "Screaming Essence"
+	SetFontSize 45
+
+# essence tier 6
+Show
+	BaseType "Shrieking Essence"
+	SetFontSize 45
+
+# essence tier 7
+Show
+	BaseType "Deafening Essence"
+	SetFontSize 45
+
+# essence tier 8
+Show
+	BaseType Essence
+	SetFontSize 45
+
+# essence - seal, sextant, unshaping
+Show
+	Class Currency
+	BaseType Seal Sextant Unshaping
 	SetFontSize 45
 
 #************************
