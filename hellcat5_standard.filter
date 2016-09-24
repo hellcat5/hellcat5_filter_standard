@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20160922
+#update date: 20160923
 #purpose: custom filter for path of exile
 #include: reference.txt
 #
@@ -176,7 +176,7 @@ Show
 	SetBackgroundColor 230 0 180
 	PlayAlertSound 7 200
 
-# map drops - magenta background black text - top tier
+# map drops - magenta background gold text - top tier
 Show
 	Class Maps
 	DropLevel >= 78
@@ -188,7 +188,7 @@ Show
 	SetBackgroundColor 200 0 150
 	PlayAlertSound 7 200
 
-# map drops - magenta background black text - middle tier
+# map drops - magenta background yellow text - middle tier
 Show
 	Class Maps
 	DropLevel >= 73
@@ -199,7 +199,7 @@ Show
 	SetBackgroundColor 200 0 150
 	PlayAlertSound 7 200
 
-# map drops - magenta background black text - low tier
+# map drops - magenta background white text - low tier
 Show
 	Class Maps
 	DropLevel >= 58
