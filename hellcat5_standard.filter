@@ -409,7 +409,6 @@ Show
 # utility flasks - grey background black text
 Show
 	Class "Utility Flasks"
-	DropLevel < 68
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 120 120 120
@@ -607,7 +606,7 @@ Show
 ##### override section - add your basetypes here #####
 # crafting / alching basetypes + build gear - bubblegum background black text
 Show
-	BaseType "Titanium Spirit Shield" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Bone Helmet" "Crystal Belt" "Vanguard Belt"
+	BaseType "Titanium Spirit Shield" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Bone Helmet" "Crystal Belt" "Vanguard Belt" "Marble Amulet" "Blue Pearl Amulet" "Opal Ring" "Steel Ring"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 255 180 220
