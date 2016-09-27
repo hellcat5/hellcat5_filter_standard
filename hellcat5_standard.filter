@@ -68,6 +68,20 @@ Show
 	SetTextColor 145 66 7
 
 #************************
+# special conditions override
+#************************
+# on the BaseType line add in any specific basetype you want to add to
+# this list.  Adding a BaseType here will override it falling under any
+# other rule below.  Typical useage: for release of new endgame item
+# basetypes that have a high value until the market becomes more abundant.
+Show
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Bone Helmet" "Crystal Belt" "Vanguard Belt" "Marble Amulet" "Blue Pearl Amulet" "Opal Ring" "Steel Ring"
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 255 180 220
+	SetBackgroundColor 255 180 220
+
+#************************
 # jewels
 #************************
 #jewels  - purple
@@ -95,6 +109,7 @@ Show
 #Show gem drops - you can add conditions here to cut down on the gems shown
 Show
 	Class Gems
+	SetFontSize 45
 
 #************************
 # divination cards
@@ -593,8 +608,8 @@ Show
 #************************
 # chancing, crafting, alching, build gear
 #************************
-# chancing basetypes - turquoise / cyan background black text
 ##### add your basetypes here for chancing #####
+# chancing basetypes - turquoise / cyan background black text
 Show
 	BaseType "Turquoise Amulet" "Agate Amulet" "Leather Belt" "Occultist's Vestment" "Prophecy Wand" "Sorcerer Boots"
 	Rarity < Magic
@@ -603,10 +618,11 @@ Show
 	SetBorderColor 0 255 255
 	SetBackgroundColor 0 255 255
 
-##### override section - add your basetypes here #####
+##### crafting override section #####
+# add the basetypes you want to search for to the BaseType line below
 # crafting / alching basetypes + build gear - bubblegum background black text
 Show
-	BaseType "Titanium Spirit Shield" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Bone Helmet" "Crystal Belt" "Vanguard Belt" "Marble Amulet" "Blue Pearl Amulet" "Opal Ring" "Steel Ring"
+	BaseType "Titanium Spirit Shield"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 255 180 220
