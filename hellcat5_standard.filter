@@ -110,8 +110,7 @@ Show
 Show
 	Class Gems
 	SetFontSize 45
-	BaseType "Cast while Channelling Support" "Vaal Breach"
-
+	
 #************************
 # divination cards
 #************************
