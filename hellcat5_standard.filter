@@ -590,6 +590,18 @@ Show
 	SetTextColor 181 71 254
 
 #************************
+# leagacy league
+#************************
+# Leaguestone - magenta black text
+Show
+	Class Leaguestone
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
+
+#************************
 # special cases
 #************************
 # talisman
@@ -633,7 +645,7 @@ Show
 # add the basetypes you want to search for to the BaseType line below
 # crafting / alching basetypes + build gear - bubblegum background black text
 Show
-	BaseType "Breach Ring"
+	BaseType "Titanium Spirit Shield"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 255 180 220
