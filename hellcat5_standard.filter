@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20150712
-#update date: 20161202
+#update date: 20170303
 #purpose: custom filter for path of exile
 #include: reference.txt
 #
@@ -528,6 +528,18 @@ Show
 	SetFontSize 45
 
 #************************
+# leagacy league
+#************************
+# Leaguestone - magenta black text
+Show
+	Class Leaguestone
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
+
+#************************
 # essence league
 #************************
 # essence tier 1
@@ -588,18 +600,6 @@ Show
 	SetFontSize 45
 	PlayAlertSound 6 200
 	SetTextColor 181 71 254
-
-#************************
-# leagacy league
-#************************
-# Leaguestone - magenta black text
-Show
-	Class Leaguestone
-	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBorderColor 230 0 180
-	SetBackgroundColor 230 0 180
-	PlayAlertSound 7 200
 
 #************************
 # special cases
